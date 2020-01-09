@@ -8,6 +8,22 @@
 </head>
 <body>
     <h1>Hello World!</h1>
-    
+    <div id="map" style="height: 100%;">
+
+    </div>
+<footer>
+    <script>
+    var KEY = "AIzaSyA1w0c9-75stdFqQlBHB590K9Ziwe0_woc";
+    var MAP;
+    let mapEle = document.getElementById("map");
+    function map(){
+        map = new google.maps.Map(mapEle), {
+            center: {lat: 43.823, lng: 111.792},
+            zoom: 10
+        }
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1w0c9-75stdFqQlBHB590K9Ziwe0_woc&callback=initMap" async defer></script>
+</footer>
 </body>
 </html>
