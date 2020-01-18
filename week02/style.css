@@ -1,0 +1,101 @@
+body, html {
+    height: 100%;
+  }
+
+  .text {
+    text-align: center;
+    background: #000000;
+    background: -moz-linear-gradient(top, #000000 0%, #3B3B3B 50%, #000000 100%);
+    background: -webkit-linear-gradient(top, #000000 0%, #3B3B3B 50%, #000000 100%);
+    background: linear-gradient(to bottom, #000000 0%, #3B3B3B 50%, #000000 100%);
+    color: white;
+    padding: 15px;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url('natureCA.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax2 {
+    /* The image used */
+    background-image: url('me.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    /* The image used */
+    background-image: url('theSea.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax4 {
+    /* The image used */
+    background-image: url('theDoor.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax5 {
+    /* The image used */
+    background-image: url('thLampPost.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .matrix {
+      background-image: url("matrixBG.gif");
+      overflow: hidden;
+  }
+  
+  .decision {
+    background: #942112;
+    background: -moz-linear-gradient(top, #942112 0%, #E36959 50%, #942112 100%);
+    background: -webkit-linear-gradient(top, #942112 0%, #E36959 50%, #942112 100%);
+    background: linear-gradient(to bottom, #942112 0%, #E36959 50%, #942112 100%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 40px;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
