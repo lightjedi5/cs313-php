@@ -23,6 +23,37 @@ if(isset($_GET["reset"])){
 if(isset($_GET["add"])){
     $i = $_GET["add"];
     $qty = $_SESSION["qty"][$i] + 1;
+    $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
+    $_SESSION["cart"][$i] = $i;
+    $_SESSION["qty"][$i] = $qty;
+}
+
+if(isset($_GET["delete"])){
+    $i = $_GET["delete"];
+    $qty = $_SESSION["qty"][$i];
+    $qty--;
+    $_SESSION["qty"][$i] = $qty;
+
+    if($qty == 0){
+        $_SESSION["amounts"][$i] = 0;
+        unset($_SESSION["cart"][$i]);
+    } else {
+        $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
+    }
+}
+
+//adds the image
+function _addImage($name){
+    switch($name){
+    case "Death Stranding":
+        echo "<img class='game' src='death_stranding.jpg' alt='deathStranding'>";
+    case "Jedi Fallen Order":
+        echo "<img class='game' src='Jedi_Fallen_order.jpg' alt='jediFallenOrder'>";
+    case "Modern Warfare":
+        echo "<img class='game' src='Modern_Warfare.jpg' alt='modernWarfare'>";
+    case "Medievil":
+        echo "<img class='game' src='medievil.jpg' alt='medievil'>";
+    }
 }
 ?>
 
@@ -39,7 +70,7 @@ if(isset($_GET["add"])){
 for ($i=0; $i< sizeof($items); $i++) {
 ?>
 	<tr>
-		<td><?php echo($items[$i]); ?></td>
+		<td><?php _addImage($items[$i]); ?></td>
 		<td width="10px">&nbsp;</td>
 		<td><?php echo($amounts[$i]); ?></td>
 		<td width="10px">&nbsp;</td>
