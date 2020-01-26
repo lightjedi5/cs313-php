@@ -3,6 +3,22 @@ session_start();
 
 $items = array("Death Stranding", "Jedi Fallen Order", "Modern Warfare", "Medievil");
 $amounts = array("49.99", "59.99", "69.99","29.99");
+
+function _addImage($name){
+    switch($name){
+    case "Death Stranding":
+        echo "<img class='game img-responsive' src='death_stranding.jpg' alt='deathStranding'>";
+        break;
+    case "Jedi Fallen Order":
+        echo "<img class='game img-responsive' src='Jedi_Fallen_Order.jpg' alt='jediFallenOrder'>";
+        break;
+    case "Modern Warfare":
+        echo "<img class='game img-responsive' src='Modern_Warfare.jpg' alt='modernWarfare'>";
+        break;
+    case "Medievil":
+        echo "<img class='game img-responsive' src='medievil.jpg' alt='medievil'>";
+        break;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +49,8 @@ $amounts = array("49.99", "59.99", "69.99","29.99");
 ?>
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-2 text-center">
-                                    <img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew" width="120" height="80">
+                                    <?php _addImage($items[$_SESSION["cart"][$i]]); ?>
+                                    <!--<img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew" width="120" height="80">-->
                             </div>
                             <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
                                 <h4 class="product-name"><strong><?php echo($items[$_SESSION["cart"][$i]]); ?></strong></h4>
