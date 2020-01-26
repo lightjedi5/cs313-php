@@ -1,0 +1,52 @@
+.topNav {
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.topNav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.topNav a:hover {
+    text-decoration: underline #a3a5aa;
+}
+/*
+.topNav a.active {
+    border: 5px solid #002db3;
+    border-radius: 10px;
+    background-color:#002db3;
+    color: white;
+}
+*/
+.game{
+    width: auto;
+    height: 40%;
+}
+
+#ps4_logo {
+    width: auto;
+    height: 75px;
+}
+
+#sCart {
+    padding-top: 50px;
+}
+/* For screens that have 300px or less */
+@media screen and (max-width: 300px){
+    .topNav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topNav a:hover {
+        text-decoration: underline #a3a5aa;
+    }
+
+}

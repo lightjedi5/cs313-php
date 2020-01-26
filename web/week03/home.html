@@ -1,0 +1,56 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03Prove</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="home.js"></script>
+</head>
+<body>
+ <div class="topNav" id="myTopNav">
+     <a href="#home" class="active"><img src="ps4_logo.png" alt="ps4_logo" id="ps4_logo"></a>
+     <a href="shopping_cart.html" id="sCart">Shopping Cart</a>
+ </div>
+ <div class="table">
+     <form action="shopping_cart.html" method="post" id="form1">
+    <table id="productCost">
+        <tr>
+            <th>Purchase?</th>
+            <th>Product</th>
+            <th>Product Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><input type="button" value="Add to Cart" class="addCart" id="item1" name="ps4Games[]"></td>
+            <td><img class="game" src="death_stranding.jpg" alt="deathStranding"></td>
+            <td id="deathStranding">49.99</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Add to Cart" class="addCart" id="item2" name="ps4Games[]"></td>
+            <td><img class="game" src="Jedi_Fallen_order.jpg" alt="jediFallenOrder"></td>    
+            <td id="jediFallenOrder">59.99</td>        
+        </tr>
+        <tr>
+            <td><input type="button" value="Add to Cart" class="addCart" id="item3" name="ps4Games[]"></td>
+            <td><img class="game" src="Modern_Warfare.jpg" alt="modernWarfare"></td>
+            <td id="modernWarfare">69.99</td>           
+        </tr>
+        <tr>
+            <td><input type="button" value="Add to Cart" class="addCart" id="item4" name="ps4Games[]"></td>
+            <td><img class="game" src="medievil.jpg" alt="medievil"></td>
+            <td id="medievil">29.99</td>            
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>Total:</td>
+            <td id="totalCost">$0.00</td>
+        </tr>
+    </table>
+ </form>
+ </div>   
+</body>
+</html>
