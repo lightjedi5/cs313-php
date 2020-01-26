@@ -84,7 +84,7 @@ for ($i=0; $i< sizeof($items); $i++) {
 <?php
 }
 ?>
-    <a colspan="5" href="ViewCart.php"><button >View Cart</button></a>
+    <a colspan="5" href="shopping_cart.php"><button >View Cart</button></a>
     <a href="?reset=true"><button >Reset Cart</button></a>
 
 
