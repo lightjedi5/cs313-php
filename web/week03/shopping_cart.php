@@ -49,7 +49,7 @@ function _addImage($name){
 ?>
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-2 text-center">
-                                    <?php _addImage($items[$_SESSION["cart"][$i]]); ?>
+                                    <?php _addImage($items[$i]); ?>
                                     <!--<img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew" width="120" height="80">-->
                             </div>
                             <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
