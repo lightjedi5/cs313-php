@@ -50,7 +50,7 @@ function _addImage($name){
         echo "<img class='game' src='death_stranding.jpg' alt='deathStranding'>";
         break;
     case "Jedi Fallen Order":
-        echo "<img class='game' src='Jedi_Fallen_order.jpg' alt='jediFallenOrder'>";
+        echo "<img class='game' src='Jedi_Fallen_Order.jpg' alt='jediFallenOrder'>";
         break;
     case "Modern Warfare":
         echo "<img class='game' src='Modern_Warfare.jpg' alt='modernWarfare'>";
