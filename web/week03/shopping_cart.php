@@ -7,16 +7,16 @@ $amounts = array("49.99", "59.99", "69.99","29.99");
 function _addImage($name){
     switch($name){
     case "Death Stranding":
-        echo "<img class='game img-responsive' src='death_stranding.jpg' alt='deathStranding' width='120' height='80'>";
+        echo "<img class='game img-responsive' src='death_stranding.jpg' alt='deathStranding' width='120' height='auto'>";
         break;
     case "Jedi Fallen Order":
-        echo "<img class='game img-responsive' src='Jedi_Fallen_Order.jpg' alt='jediFallenOrder' width='120' height='80'>";
+        echo "<img class='game img-responsive' src='Jedi_Fallen_Order.jpg' alt='jediFallenOrder' width='120' height='auto'>";
         break;
     case "Modern Warfare":
-        echo "<img class='game img-responsive' src='Modern_Warfare.jpg' alt='modernWarfare' width='120' height='80'>";
+        echo "<img class='game img-responsive' src='Modern_Warfare.jpg' alt='modernWarfare' width='120' height='auto'>";
         break;
     case "Medievil":
-        echo "<img class='game img-responsive' src='medievil.jpg' alt='medievil' width='120' height='80'>";
+        echo "<img class='game img-responsive' src='medievil.jpg' alt='medievil' width='120' height='auto'>";
         break;
     }
 }
