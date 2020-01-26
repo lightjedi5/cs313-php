@@ -40,7 +40,7 @@ function _addImage($name){
                 <div class="card-header bg-dark text-light">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     Shopping cart
-                    <a href="" class="btn btn-outline-info btn-sm pull-right">Continue shopping</a>
+                    <a href="browseItems.php" class="btn btn-outline-info btn-sm pull-right">Continue shopping</a>
                     <div class="clearfix"></div>
                 </div>
                 <div class="card-body">
@@ -92,15 +92,15 @@ function _addImage($name){
                     <div class="coupon col-md-5 col-sm-5 no-padding-left pull-left">
                         <div class="row">
                             <div class="col-6">
-                                <input type="text" class="form-control" placeholder="cupone code">
+                                <input type="text" class="form-control" placeholder="coupon code">
                             </div>
                             <div class="col-6">
-                                <input type="submit" class="btn btn-default" value="Use cupone">
+                                <input type="submit" class="btn btn-default" value="Use coupon">
                             </div>
                         </div>
                     </div>
                     <div class="pull-right" style="margin: 10px">
-                        <a href="browseItems.php" class="btn btn-success pull-right" style="margin-right: 10px;">Continue Shopping</a>
+                        <a href="browseItems.php" class="btn btn-success pull-right">Continue Shopping</a>
                         <a href="checkout.php" class="btn btn-success pull-right">Checkout</a>
                         <div class="pull-right" style="margin: 5px">
                             Total price: <b><?php echo($total); ?></b>
