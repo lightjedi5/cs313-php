@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <?php
 session_start();
 
@@ -47,12 +48,16 @@ function _addImage($name){
     switch($name){
     case "Death Stranding":
         echo "<img class='game' src='death_stranding.jpg' alt='deathStranding'>";
+        break;
     case "Jedi Fallen Order":
         echo "<img class='game' src='Jedi_Fallen_order.jpg' alt='jediFallenOrder'>";
+        break;
     case "Modern Warfare":
         echo "<img class='game' src='Modern_Warfare.jpg' alt='modernWarfare'>";
+        break;
     case "Medievil":
         echo "<img class='game' src='medievil.jpg' alt='medievil'>";
+        break;
     }
 }
 ?>
