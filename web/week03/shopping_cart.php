@@ -39,8 +39,8 @@ function _addImage($name){
        <div class="card shopping-cart">
                 <div class="card-header bg-dark text-light">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    Shipping cart
-                    <a href="" class="btn btn-outline-info btn-sm pull-right">Continiu shopping</a>
+                    Shopping cart
+                    <a href="" class="btn btn-outline-info btn-sm pull-right">Continue shopping</a>
                     <div class="clearfix"></div>
                 </div>
                 <div class="card-body">
@@ -58,7 +58,7 @@ function _addImage($name){
                             </div>
                             <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
                                 <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
-                                    <h6><strong><?php echo($_SESSION["amounts"][$i]); ?><span class="text-muted">x</span></strong></h6>
+                                    <h6><strong><?php echo($_SESSION["amounts"][$i]); ?><span class="text-muted"> x </span></strong></h6>
                                 </div>
                                 <div class="col-4 col-sm-4 col-md-4">
                                     <div class="quantity">
@@ -77,7 +77,9 @@ function _addImage($name){
                         </div>
                         <hr>
 <?php
+    $total = $total + $_SESSION["amounts"][$i];
     }
+    $_SESSION["total"] = $total;
 ?>
                         <!-- END PRODUCT -->
                     <div class="pull-right">
@@ -100,7 +102,7 @@ function _addImage($name){
                     <div class="pull-right" style="margin: 10px">
                         <a href="" class="btn btn-success pull-right">Checkout</a>
                         <div class="pull-right" style="margin: 5px">
-                            Total price: <b>50.00€</b>
+                            Total price: <b><?php echo($total); ?></b>
                         </div>
                     </div>
                 </div>
