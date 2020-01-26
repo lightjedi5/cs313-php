@@ -100,7 +100,8 @@ function _addImage($name){
                         </div>
                     </div>
                     <div class="pull-right" style="margin: 10px">
-                        <a href="" class="btn btn-success pull-right">Checkout</a>
+                        <a href="browseItems.php" class="btn btn-success pull-right">Continue Shopping</a>
+                        <a href="checkout.php" class="btn btn-success pull-right">Checkout</a>
                         <div class="pull-right" style="margin: 5px">
                             Total price: <b><?php echo($total); ?></b>
                         </div>
