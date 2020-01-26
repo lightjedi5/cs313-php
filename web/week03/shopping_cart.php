@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+$items = array("Death Stranding", "Jedi Fallen Order", "Modern Warfare", "Medievil");
+$amounts = array("49.99", "59.99", "69.99","29.99");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
