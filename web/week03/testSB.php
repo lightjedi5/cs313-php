@@ -2,7 +2,7 @@
     <?php
         try
         {
-          $dbUrl = getenv('DATABASE_URL');
+          $dbUrl = exec("heroku config:get DATABASE_URL -a lit-mesa-27727");
         
           $dbOpts = parse_url($dbUrl);
         
@@ -22,11 +22,11 @@
           die();
         }
         try{
-        $statement = $db->query("SELECT * FROM game");
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-          echo 'user: ' . $row['product_name']  . '<br/>';
-        }
+          $statement = $db->query('SELECT username, password FROM note_user');
+          while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+          {
+            echo 'user: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
+          }
       }
       catch(PDOException $ex)
       {
