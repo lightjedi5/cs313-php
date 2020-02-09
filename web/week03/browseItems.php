@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="style.css">
-<?php //webpage stuff
+<?php 
+include 'db_connect.php'
+//webpage stuff
 session_start();
 
 $items = array("Death Stranding", "Jedi Fallen Order", "Modern Warfare", "Medievil");
@@ -43,28 +45,6 @@ if(isset($_GET["delete"])){
     }
 }
 
-//database stuff
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
-
-  $dbOpts = parse_url($dbUrl);
-
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
-
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
 
 
 //adds the image
