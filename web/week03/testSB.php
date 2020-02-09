@@ -4,6 +4,11 @@
         {
           $dbUrl = exec("heroku config:get DATABASE_URL -a lit-mesa-27727");
         
+          if (empty($dbUrl)) {
+            // example localhost configuration URL with postgres username and a database called cs313db
+            $dbUrl = "postgres://postgres:password@localhost:5432/cs313db";
+           }
+           
           $dbOpts = parse_url($dbUrl);
         
           $dbHost = $dbOpts["host"];
