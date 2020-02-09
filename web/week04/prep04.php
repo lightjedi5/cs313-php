@@ -21,3 +21,4 @@ catch (PDOException $ex)
   die();
 }
 ?>
+<div>hello world!</div>
