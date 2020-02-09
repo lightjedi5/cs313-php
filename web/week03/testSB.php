@@ -22,10 +22,10 @@
           die();
         }
         try{
-        $statement = $db->query("SELECT username, password FROM note_user");
+        $statement = $db->query("SELECT * FROM game");
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
-          echo 'user: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
+          echo 'user: ' . $row['product_name']  . '<br/>';
         }
       }
       catch(PDOException $ex)
