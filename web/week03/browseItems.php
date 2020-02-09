@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="style.css">
 <?php 
-include 'db_connect.php'
+include 'db_connect.php';
 //webpage stuff
 session_start();
 
